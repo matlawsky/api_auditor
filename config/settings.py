@@ -173,6 +173,11 @@ CELERY_BEAT_SCHEDULE = {
         "options": {"expires": 55},
     },
 }
+# Kolejki pomocnicze Celery: przypisane do konkretnego połączenia.
+CELERY_EVENT_QUEUE_EXCLUSIVE = True
+CELERY_EVENT_QUEUE_DURABLE = False
+CELERY_CONTROL_QUEUE_EXCLUSIVE = True
+CELERY_CONTROL_QUEUE_DURABLE = False
 
 # Loggging
 LOGGING = {
